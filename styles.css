@@ -1,0 +1,145 @@
+/* 🔮 Base Variables */
+:root {
+    --bg-dark: #0a0f1c;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --text-light: #ffffff;
+    --glow-blue: #00eaff;
+    --glow-pink: #ff00ff;
+    --glow-gold: #ffb347;
+    --glow-purple: #a020f0;
+    --glow-green: #39ff14;
+    --neon-border: rgba(255, 255, 255, 0.15);
+    --card-radius: 20px;
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Section Style */
+  section {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px var(--glow-blue), 0 0 30px var(--glow-pink);
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #0d1b2a, #1b263b);
+    position: relative;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--glow-blue);
+    text-shadow: 0 0 20px var(--glow-blue);
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    color: var(--glow-green);
+    text-shadow: 0 0 10px var(--glow-green);
+  }
+  
+  /* Glassy Card UI */
+  .skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .skill, .project {
+    background: var(--glass-bg);
+    border: 2px solid var(--neon-border);
+    border-radius: var(--card-radius);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--text-light);
+    position: relative;
+  }
+  
+  /* Glowing cards (random neon glow class) */
+  .skill:nth-child(1) { box-shadow: 0 0 15px var(--glow-gold); border-color: var(--glow-gold); }
+  .skill:nth-child(2) { box-shadow: 0 0 15px var(--glow-purple); border-color: var(--glow-purple); }
+  .skill:nth-child(3) { box-shadow: 0 0 15px var(--glow-blue); border-color: var(--glow-blue); }
+  .skill:nth-child(4) { box-shadow: 0 0 15px var(--glow-green); border-color: var(--glow-green); }
+  .skill:nth-child(5) { box-shadow: 0 0 15px var(--glow-pink); border-color: var(--glow-pink); }
+  
+  .skill:hover, .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00ffff;
+  }
+  
+  /* Contact Form */
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .contact input, .contact textarea {
+    background: #1b1b2f;
+    border: 1px solid #00f0ff;
+    padding: 15px;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00f0ff;
+  }
+  
+  .contact button {
+    background: linear-gradient(to right, #ff00c8, #00ffff);
+    color: #000;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #00ffff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .contact button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ff00ff;
+  }
+  
+  /* Neon Glow Animation */
+  @keyframes pulse {
+    0% { box-shadow: 0 0 10px #00ffff; }
+    50% { box-shadow: 0 0 30px #00ffff; }
+    100% { box-shadow: 0 0 10px #00ffff; }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  }
+  
