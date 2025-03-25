@@ -1,0 +1,26 @@
+/* Import Fonts */
+@font-face {
+    font-family: 'ITC Avant Garde Gothic LT Bold';
+    src: url('assets/fonts/ITC\ Avant\ Garde\ Gothic\ LT\ Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('assets/fonts/Futura/Futura\ Book.ttf') format('truetype'),
+         url('assets/fonts/Futura/Futura\ Condensed\ Demi.ttf') format('truetype'),
+         url('assets/fonts/Futura/Futura\ Condensed\ Extra\ Bold.ttf') format('truetype'),
+         url('assets/fonts/Futura/Futura\ Medium.ttf') format('truetype'),
+         url('assets/fonts/Futura/Futura_Book-Bold.ttf') format('truetype'),
+         url('assets/fonts/Futura/Futura_ICG_Book_Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
