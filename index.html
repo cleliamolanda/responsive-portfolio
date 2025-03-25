@@ -30,7 +30,7 @@
             <a href="#">CONTACT ME</a>
         </div>
         <div class="social-icons">
-            <a href="https://github.com/cleliamolanda" target="_blank" c>
+            <a href="https://github.com/cleliamolanda" target="_blank">
                 <img src="assets/images/icons/github.png" alt="GitHub">
             </a>
             <a href="https://www.linkedin.com/in/clelia-cyra-jaye-molanda-334b05297/" target="_blank">
@@ -44,7 +44,7 @@
             </a>
         </div>
 
-        <div class="hero-section">
+        <div class="hero-section" id="hero-section">
             <div class="profile-container">
                 <div class="profile-img">
                     <img src="assets/images/totoro.png" alt="Profile Image">
@@ -68,4 +68,9 @@
         </div>
     </div>
 
+    <script>
+        document.querySelector('.next-section').addEventListener('click', function() {
+            document.getElementById('hero-section').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
