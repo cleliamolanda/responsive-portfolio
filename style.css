@@ -1,26 +1,97 @@
 /* Import Fonts */
 @font-face {
     font-family: 'ITC Avant Garde Gothic LT Bold';
-    src: url('assets/fonts/ITC\ Avant\ Garde\ Gothic\ LT\ Bold.otf') format('opentype');
+    src: url('assets/fonts/ITC Avant Garde Gothic LT Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura';
-    src: url('assets/fonts/Futura/Futura\ Book.ttf') format('truetype'),
-         url('assets/fonts/Futura/Futura\ Condensed\ Demi.ttf') format('truetype'),
-         url('assets/fonts/Futura/Futura\ Condensed\ Extra\ Bold.ttf') format('truetype'),
-         url('assets/fonts/Futura/Futura\ Medium.ttf') format('truetype'),
-         url('assets/fonts/Futura/Futura_Book-Bold.ttf') format('truetype'),
-         url('assets/fonts/Futura/Futura_ICG_Book_Oblique.ttf') format('truetype');
-    font-weight: normal;
+    src: url('assets/fonts/Futura/Futura\ Book.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
-body {
+@font-face {
+    font-family: 'Futura';
+    src: url('assets/fonts/Futura/Futura_Book-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('assets/fonts/Futura/Futura Condensed Demi.ttf') format('truetype');
+    font-weight: 550;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('assets/fonts/Futura/Futura_ICG_Book_Oblique.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('assets/fonts/Futura/Futura Medium.ttf') format('truetype');
+    font-weight: 550;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('assets/fonts/Futura/Futura Condensed Extra Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Futura', 'Arial', sans-serif;
+    color: #e4efe9;
+    background-color: #31A6BF; /* Sky Blue fallback */
+}
+
+/* Greetings Sections */
+.greetings-section {
+    height: 100vh;
+    background: url('assets/images/backgrounds/greetings-bg.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    color: #e4efe9;
+    text-align: center;
+    padding-right: 10vw;
+}
+
+.greetings-container {
+    margin-bottom: 2rem;
+}
+
+.japanese-greeting {
+    font-family: 'MS Gothic';
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 3px solid #e4efe9;
+    padding-bottom: 0.5rem;
+}
+
+.english-greeting {
+    font-family: 'ITC Avant Garde Gothic LT Bold', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
 }
