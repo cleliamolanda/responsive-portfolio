@@ -16,7 +16,7 @@
 @font-face {
     font-family: 'Futura Bold';
     src: url('assets/fonts/Futura/Futura_Book-Bold.ttf') format('truetype');
-    /* font-weight: 700; */
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -152,7 +152,8 @@ body {
 }
 
 .contact-me a {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Futura Bold', sans-serif;
+    font-weight: bold;
     color: #1B1919;
     text-decoration: none;
     text-transform: uppercase;
@@ -173,17 +174,19 @@ body {
     left: 3rem;
     transform: translateY(-50%);
     gap: 20px;
+    justify-content: center;
+    padding-bottom: 15rem;
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
-    opacity: 0.75;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.85;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .social-icons a:hover img {
-    /* transform: scale(1.2); */
+    transform: scale(1.2);
     opacity: 1;
 }
 
@@ -193,17 +196,19 @@ body {
     background: url('assets/images/backgrounds/hero-bg.png') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+    justify-content: start;
+    align-items: end;
+    color: #e4efe9;
+    padding-right: 10vw;
 }
 
 .profile-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
     text-align: center;
+    padding: 7rem 0 10rem 0;
+
 }
 
 .profile-img {
@@ -211,10 +216,11 @@ body {
     height: 180px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #ccc;
+    background-color: #e4efe9;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #EEC639;
 }
 
 .profile-img img {
@@ -226,17 +232,17 @@ body {
 h1 {
     font-family: 'ITC Avant Garde Gothic LT Bold', sans-serif;
     font-size: 4rem;
+    color: #EEC639;
 }
 
-.highlight {
-    color: #EEC639; /* Gold */
-    font-style: italic;
+.myname {
+    font-family: 'Futura Oblique', sans-serif;
+    font-size: 3.75rem;
 }
 
 /* Tagline */
 .tagline-container p {
-    font-family: 'Futura', sans-serif;
-    font-size: 1.25rem;
-    font-style: italic;
-    margin-top: 1rem;
+    font-family: 'Futura Oblique', sans-serif;
+    font-size: 1.5rem;
+    /* margin-top: 1rem; */
 }
