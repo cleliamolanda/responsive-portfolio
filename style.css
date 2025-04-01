@@ -300,6 +300,11 @@ h3 {
     grid-column-gap: 16px;
 }
 
+.w-inline-block {
+    max-width:100%;
+    display:inline-block
+}
+
 .grid-2col {
     width: 100%;
     height: auto;
@@ -370,6 +375,17 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 
+.heading-style-h2 {
+    margin-bottom: 0rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+.heading-style-h2.color-style-white {
+    color: #F0F0F0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -396,6 +412,16 @@ h3 {
     align-items: center;
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
+}
+
+.text-size-xlarge {
+    margin-bottom: 0rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-size-xlarge.color-style-white {
+    color: #F0F0F0;
 }
 
 .text-size-medium {
@@ -455,4 +481,141 @@ h3 {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+.button__magnetic {
+    position: relative;
+}
+
+.button__magnetic.ghosting {
+    display: flex;
+    min-height: 64px;
+    justify-content: center;
+    align-items: center;
+    color: #BAE0FF;
+}
+
+.button__magnetic.ghost1 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 90;
+    margin: 1px;
+    border-radius: 32px;
+    background-color: #12344F;
+    opacity: 0.5;
+}
+
+.button__magnetic.ghost2 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 80;
+    margin: 1px;
+    border-radius: 32px;
+    background-color: #205683;
+    opacity: 0.5;
+}
+
+.button__magnetic.ghost3 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 70;
+    margin: 1px;
+    border-radius: 32px;
+    background-color: #12344F;
+    opacity: 0.5;
+}
+
+.button__magnetic-content {
+    display: flex;
+    min-height: 64px;
+    padding: 0px 64px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    color: #12344F;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.button__magnetic-link {
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    border: 1px solid #F0F0F0;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.button__magnetic-link.default {
+    border: 0px none transparent;
+    border-radius: 1000px;
+}
+
+.social {
+    z-index: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.social-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fa brands 400', sans-serif;
+    color: #e4b3a3;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.icon img {
+    position: relative;
+    z-index: 3;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-bg {
+    position: absolute;
+    z-index: -1;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #F0F0F0;
+}
+
+.social__icon-link {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.icon-bg-over {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #BAE0FF;
 }
